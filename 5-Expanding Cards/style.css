@@ -7,35 +7,44 @@
 }
 
 body {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
+  position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
   font-family: "Roboto", sans-serif;
 }
-
-.container {
+.headline {
+  background-color: rgb(98, 206, 233);
+  width: 100vw;
   display: flex;
-  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.container {
+  margin: auto auto;
+  display: flex;
+  width: 95vw;
 }
 
 .panel {
-  background-size: auto 100%;
+  /* background-size: auto 100%;  //width  height */
+  background-size: cover; /* width  height*/
   background-repeat: no-repeat;
   height: 80vh;
-  border-radius: 50px;
+  border-radius: 30px;
   color: #ffff;
   cursor: pointer;
   flex: 0.5;
-  margin: 10px;
+  /* flex-grow: 0.5; */
+  margin: 5px;
   position: relative;
-  transition: flex 0.7 ease-in;
+  transition: flex 0.97s ease-in;
 }
 
 .panel h3 {
+  font-weight: 100;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -44,5 +53,39 @@ body {
 }
 
 .panel.active {
-  flex: 5;
+  /* flex-grow: 5; */
+  flex-grow: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.7s 0.5s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(3) {
+    display: none;
+  }
+}
+
+/* Copy to Each Project  */
+body span {
+  font-size: 20px;
+  font-weight: 900;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(35, 190, 201);
+  padding: 4px 5px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
 }

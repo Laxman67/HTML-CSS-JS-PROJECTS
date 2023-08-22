@@ -6,6 +6,7 @@
 
 body {
   background-color: crimson;
+  position: relative;
 }
 
 .card {
@@ -23,6 +24,19 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(210, 200, 200);
-  border-radius: 20px;
-  background: linear-gradient(#898998, #cb6809);
+  border-radius: 10px;
+  background: linear-gradient(#f5f5f6, #db1a09);
+}
+
+body span {
+  font-size: 20px;
+  font-weight: 900;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(211, 64, 19);
+  padding: 4px 5px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
 }
