@@ -24,12 +24,14 @@ h1 {
   padding: 20px;
 }
 
+/* List  */
 .recipe-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* list Item */
 .recipe-item {
   display: flex;
   align-items: center;
@@ -43,7 +45,7 @@ h1 {
 .recipe-item img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  object-fit: cover; /* object fit  and maintain exact proportion*/
 }
 .recipe-item h2 {
   margin: 0;
