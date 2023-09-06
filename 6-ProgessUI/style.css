@@ -36,7 +36,7 @@ body {
   background-color: var(--line-border-empty);
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 0px;
   height: 4px;
   width: 100%;
   transform: translateY(-50%);

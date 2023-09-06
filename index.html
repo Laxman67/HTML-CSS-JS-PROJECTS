@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-CSS-JS-PROJECTS</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -16,28 +18,104 @@
         body {
             height: 100vh;
             width: 100vw;
+            justify-content: center;
+            align-items: center;
+            background-color: #ccc;
+            font-family: sans-serif;
+
+
+        }
+
+
+        header {
+            width: 100vw;
+            background-color: #1450A3;
+            color: #fff;
+        }
+
+        nav {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0px auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(170, 228, 209);
+        }
 
 
+
+        .container {
+            max-width: 80%;
+            margin: 20px auto;
+        }
+
+
+
+        li {
+            background-color: #1450A3;
+            cursor: pointer;
+            text-align: center;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px auto;
+            position: relative;
+            border: 1px solid rgb(145, 145, 142);
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: all .3s;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        li a:hover {
+            color: black;
+
+        }
+
+
+
+        li:hover {
+            background-color: #e1dcdc;
+            color: black;
+
+
+        }
+
+        #new-item img {
+            position: absolute;
+            width: 60px;
+            bottom: 0px;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <h1> HTML CSS JS PROJECTS</h1>
+        </nav>
+    </header>
 
     <div class="container">
-        <ul style="list-style-type: circle;">
+        <ol>
             <li><a href="1-Bg-Vedio/bg.html">BackGround Vedio Loader</a></li>
             <li><a href="2-Dynamic_Loading/index.html">Dynamic Loading </a></li>
             <li><a href="3-customScrollBar/ScrollBar.html">Scroll Bar Styling </a></li>
             <li><a href="4-CeativeImage/CreativeImg.html">Crative Image </a></li>
             <li><a href="5-Expanding Cards/expandCard.html">Expanding Card Animation </a></li>
+            <li><a href="8-Age Calculator/index.html">Age Calculator </a><span id="new-item"><img
+                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+            <li><a href="9-Tip Calculator/index.html">Tip Calculator </a> <span id="new-item"><img
+                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
 
 
-        </ul>
+
+        </ol>
 
     </div>
 
