@@ -9,6 +9,7 @@ let timeLeft = 1500;
 function updateTimer() {
   let minutes = Math.floor(timeLeft / 60);
   let seconds = timeLeft % 60;
+  console.log(timeLeft % 60);
 
   let formattedTime = ` ${minutes.toString().padStart(2, "0")} : ${seconds
     .toString()
@@ -24,8 +25,9 @@ function startTimer() {
       clearInterval(interval);
       alert("Times Up");
       timeLeft = 1500;
+      return;
     }
-  }, 1000);
+  }, 1000); //run each 1s
 }
 
 function stopTimer() {
