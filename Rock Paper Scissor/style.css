@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +32,7 @@ button {
   border: none;
   font-size: 3rem;
   margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.3rem;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -43,6 +49,10 @@ button:hover {
 }
 #scissors {
   background-color: #4caf50;
+}
+
+#result {
+  margin-top: 20px;
 }
 
 #user-score {
