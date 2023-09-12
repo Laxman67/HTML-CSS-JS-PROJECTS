@@ -38,6 +38,7 @@ function rollDice() {
   // Array of roll Result [2,6...] so on...
   historyList.push(rollResult);
 
+  // Update List Accordingly
   updateRollHistory();
 }
 
