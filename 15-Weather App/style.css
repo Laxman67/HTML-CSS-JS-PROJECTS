@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ebe6e6;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
