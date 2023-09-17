@@ -99,6 +99,7 @@ form {
   margin-bottom: 60px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  display: none;
 }
 
 #show-more-button:hover {
