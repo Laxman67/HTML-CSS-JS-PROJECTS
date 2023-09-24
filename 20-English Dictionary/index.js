@@ -20,7 +20,7 @@ async function fetchAPI(word) {
     console.log(result);
     infoText.innerText = "Type a word and Press Enter";
     meaningContainer.style.display = "block";
-    // Pass to html4
+    // Pass to html
     //
     titleEl.innerText = result[0].word;
     meaningEl.innerHTML = result[0].meanings[0].definitions[0].definition;
