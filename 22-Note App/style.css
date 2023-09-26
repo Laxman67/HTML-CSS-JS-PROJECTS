@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, lightblue, lightgreen);
+  font-family: monospace;
+}
+
+.heading {
+  font-size: 35px;
+  color: darkblue;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.info-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: darkblue;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.note {
+  padding: 17px;
+  border-radius: 15px;
+  border: none;
+  resize: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  height: 200px;
+  color: darkblue;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+}
+
+.note::placeholder {
+  color: gray;
+  opacity: 50%;
+  font-weight: 900;
+}
+
+.note:hover,
+.note:focus {
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  height: 200px;
+  border-color: rgba(255, 255, 255.37);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  font-size: 70px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.55);
+  transition: all 0.2s ease-in-out;
+}
