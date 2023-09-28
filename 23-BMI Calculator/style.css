@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  min-width: 80%;
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.3);
