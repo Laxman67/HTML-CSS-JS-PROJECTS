@@ -37,6 +37,10 @@ body {
   font-size: 18px;
 }
 
+.temp-container > label {
+  float: left;
+}
+
 .input {
   width: 220px;
   font-family: monospace;
