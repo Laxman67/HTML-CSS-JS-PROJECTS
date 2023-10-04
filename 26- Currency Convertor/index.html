@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Currency Convertor</h1>
+        <div class="currency-container">
+            <select id="currency-first">
+                <optgroup>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EURO">EURO</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="USD" selected>USD</option>
+                </optgroup>
+            </select>
+
+            <input type="number" value="1" id="worth-first" min="0">
+
+        </div>
+
+        <!--  -->
+
+        <div class="currency-container">
+            <select id="currency-second">
+                <optgroup>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EURO">EURO</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR" selected>INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="USD">USD</option>
+                </optgroup>
+            </select>
+
+            <input type="number" id="worth-second" disabled min="0">
+
+        </div>
+
+        <p class="exchange-rate" id="exchage-rate"> 1 USD = 138.5002 INRc </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
