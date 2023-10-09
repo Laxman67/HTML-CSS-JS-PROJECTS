@@ -12,10 +12,10 @@ async function getEmoji() {
 
   data = await response.json();
 
-  for (let index = 0; index < 1500; index++) {
+  for (let i = 0; i < 1500; i++) {
     emoji.push({
-      emojiName: data[index].character,
-      emojiCode: data[index].unicodeName,
+      emojiName: data[i].character,
+      emojiCode: data[i].unicodeName,
     });
   }
 }
