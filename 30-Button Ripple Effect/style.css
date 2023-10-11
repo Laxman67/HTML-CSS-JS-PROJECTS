@@ -25,14 +25,18 @@ body {
   overflow: hidden;
 }
 
+:root {
+  --orange: orangered;
+}
+
 .btn::before {
   content: "";
   position: absolute;
-  background-color: orangered;
+  background-color: var(--orange);
   width: 0;
   height: 0;
-  left: 50%;
-  top: 50%;
+  left: var(--xPos);
+  top: var(--yPos);
   transform: translate(-50%, -50%);
   border-radius: 50%;
   transition: width 0.5s, height 0.5s ease;
