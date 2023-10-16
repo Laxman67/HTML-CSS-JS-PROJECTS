@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-container {
+  background-color: salmon;
+
+  width: 120px;
+  height: 90px;
+  margin: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0.5);
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+.color-container:active {
+  transform: scale(0.98);
+}
