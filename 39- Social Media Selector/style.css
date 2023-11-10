@@ -42,7 +42,7 @@ body {
   padding: 10px;
   align-items: center;
   cursor: pointer;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in;
 }
 
 .social-lists li:hover {
@@ -54,6 +54,15 @@ body {
   margin: 0 10px;
 }
 
+.menu .fas {
+  transition: transform 0.2s;
+}
+
+.menu p {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
 .rotate .fas {
   transform: rotate(180deg);
 }
