@@ -1,6 +1,6 @@
 const starsEl = document.querySelectorAll(".fa-star");
 const emojisEl = document.querySelectorAll(".far");
-// const colors= ["red",]
+const colors = ["red", "orange", "lightblue", "lightgreen", "green"];
 
 starsEl.forEach((starEL, index) => {
   starEL.addEventListener("click", () => {
@@ -18,6 +18,8 @@ function updateRating(index) {
 
     emojisEl.forEach((emojiEL) => {
       emojiEL.style.transform = `translateX(-${index * 50}px)`;
+
+      emojiEL.style.color = `${colors[index]}`;
     });
   });
 }
