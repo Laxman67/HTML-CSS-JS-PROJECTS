@@ -29,7 +29,7 @@ body {
   top: 20%;
   width: 50px;
   height: 50px;
-  background-color: yellow;
+  /* background-color: yellow; */
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -38,6 +38,7 @@ body {
 .far {
   margin: 1px;
   transform: translateX(-0px);
+  transition: transform 0.2s ease-out;
 }
 
 .rating-container {
