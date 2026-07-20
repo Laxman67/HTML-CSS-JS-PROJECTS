@@ -1,197 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>60-HTML-CSS-JS-PROJECTS (Laxman)</title>
-    <meta name="google-site-verification" content="QWYDqGWOirAQOPK48SQxmd3OVJgw1dR2je6aktd3v14" />
+    <meta
+      name="google-site-verification"
+      content="QWYDqGWOirAQOPK48SQxmd3OVJgw1dR2je6aktd3v14"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            height: 100vh;
-            width: 100vw;
-            justify-content: center;
-            align-items: center;
-            background-color: #ccc;
-            font-family: sans-serif;
+      body {
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        font-family: sans-serif;
+      }
 
+      header {
+        width: 100vw;
+        background-color: rgba(89, 138, 207, 0.7);
+        color: #fff;
+        position: fixed;
+        height: 90px;
+        z-index: 1;
+        top: 0px;
+      }
 
-        }
+      nav {
+        padding: 20px;
+        max-width: 600px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
+      .container {
+        max-width: 80%;
+        width: 100%;
+        margin: 20px auto;
+        margin-top: 100px;
+      }
 
-        header {
-            width: 100vw;
-            background-color: rgba(89, 138, 207, .7);
-            color: #fff;
-            position: fixed;
-            height: 90px;
-            z-index: 1;
-            top: 0px;
+      li {
+        background-color: #1450a3;
+        cursor: pointer;
+        text-align: center;
+        max-width: 500px;
+        padding: 10px;
+        margin: 10px auto;
+        position: relative;
+        border: 1px solid rgb(145, 145, 142);
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s;
+      }
 
-        }
+      li a {
+        text-decoration: none;
+        color: white;
+      }
 
-        nav {
-            padding: 20px;
-            max-width: 600px;
-            margin: 0px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      li a:hover {
+        color: black;
+      }
 
+      li:hover {
+        background-color: #e1dcdc;
+        color: black;
+      }
 
+      #new-item img {
+        position: absolute;
+        width: 60px;
+        bottom: 0px;
+        height: auto;
+      }
 
+      @media screen and (max-width: 768) {
         .container {
-            max-width: 80%;
-            width: 100%;
-            margin: 20px auto;
-            margin-top: 100px;
+          width: 100%;
         }
-
-
-
-        li {
-            background-color: #1450A3;
-            cursor: pointer;
-            text-align: center;
-            max-width: 500px;
-            padding: 10px;
-            margin: 10px auto;
-            position: relative;
-            border: 1px solid rgb(145, 145, 142);
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            transition: all .3s;
-        }
-
-        li a {
-            text-decoration: none;
-            color: white;
-
-        }
-
-        li a:hover {
-            color: black;
-
-        }
-
-
-
-        li:hover {
-            background-color: #e1dcdc;
-            color: black;
-
-
-        }
-
-        #new-item img {
-            position: absolute;
-            width: 60px;
-            bottom: 0px;
-            height: auto;
-        }
-
-        @media screen and (max-width:768) {
-            .container {
-                width: 100%;
-
-            }
-
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <h1> HTML CSS JS PROJECTS</h1>
-        </nav>
+      <nav>
+        <h1 style="color: blue">HTML CSS JS PROJECTS</h1>
+      </nav>
     </header>
 
     <div class="container">
-        <ol>
-            <li><a href="1-Bg-Vedio/bg.html">BackGround Vedio Loader</a></li>
-            <li><a href="2-Dynamic_Loading/index.html">Dynamic Loading </a></li>
-            <li><a href="3-customScrollBar/ScrollBar.html">Scroll Bar Styling </a></li>
-            <li><a href="4-CeativeImage/CreativeImg.html">Crative Image </a></li>
-            <li><a href="5-Expanding Cards/expandCard.html">Expanding Card Animation </a></li>
-            <li><a href="8-Age Calculator/index.html">Age Calculator </a></li>
-            <li><a href="9-Tip Calculator/index.html">Tip Calculator </a> </li>
+      <ol>
+        <li><a href="1-Bg-Vedio/bg.html">BackGround Vedio Loader</a></li>
+        <li><a href="2-Dynamic_Loading/index.html">Dynamic Loading </a></li>
+        <li>
+          <a href="3-customScrollBar/ScrollBar.html">Scroll Bar Styling </a>
+        </li>
+        <li><a href="4-CeativeImage/CreativeImg.html">Crative Image </a></li>
+        <li>
+          <a href="5-Expanding Cards/expandCard.html"
+            >Expanding Card Animation
+          </a>
+        </li>
+        <li><a href="8-Age Calculator/index.html">Age Calculator </a></li>
+        <li><a href="9-Tip Calculator/index.html">Tip Calculator </a></li>
 
-            <li><a href="10-Recipe Book App/index.html">Recipe Book App using API </a> </li>
-            <li><a href="11- Dice Roll Simulator/index.html">Dice Roll Simulator</a> </li>
-            <li><a href="12-Pomodoro Timer/index.html">Pomodor Timer</a>
-            </li>
-            <li><a href="13- Rock Paper Scissor/index.html">Rock Paper Scissor</a> </li>
-            <li><a href="14-StopWatch Timer/index.html">StopWatch </a> </li>
-            <li><a href="15-Weather App/index.html">Weather App </a> </li>
+        <li>
+          <a href="10-Recipe Book App/index.html">Recipe Book App using API </a>
+        </li>
+        <li>
+          <a href="11- Dice Roll Simulator/index.html">Dice Roll Simulator</a>
+        </li>
+        <li><a href="12-Pomodoro Timer/index.html">Pomodor Timer</a></li>
+        <li>
+          <a href="13- Rock Paper Scissor/index.html">Rock Paper Scissor</a>
+        </li>
+        <li><a href="14-StopWatch Timer/index.html">StopWatch </a></li>
+        <li><a href="15-Weather App/index.html">Weather App </a></li>
 
-            <li><a href="16 -Image Search App/index.html">Image Search App </a> </li>
-            <li><a href="17-Basic Calculator/index.html">Basic Calculator </a> </li>
-            <li><a href="18-Dad Joke Generator/index.html">Dad joke Generator </a> </li>
-            <li><a href="19 Photo Gallery/index.html">Basic Photo Gallery </a> </li>
-            <li><a href="20-English Dictionary/index.html">English Dictionary</a> </li>
-            <li><a href="21-Anime Pic Generator/index.html">Anime Pic Generator </a> </li>
-            <li><a href="22-Note App/index.html">Note App</a> </li>
-            <li><a href="23-BMI Calculator/index.html">BMI Calculator </a> </li>
-            <li><a href="24- Random Quote Generator/index.html">Random Quote Generator </a> </li>
-            <li><a href="25- Temperature Convertor/">Temperature Convertor </a> </li>
-            <li><a href="26- Currency Convertor/index.html">Currency Convertor </a> </li>
-            <li><a href="27- Loan Calculator/index.html">Loan Calculator </a> </li>
-            <li><a href="28-Random Emoji/index.html">Random Emoji </a> </li>
-            <li><a href="29-Feedback UI/index.html"> Feedback UI </a> </li>
-            <li><a href="30-Button Ripple Effect/index.html"> Button Ripple Effect </a> </li>
-            <li><a href="31-DigitalClock/index.html"> DigitalClock </a> </li>
-            <li><a href="32-Rotating Image Gallery/index.html"> Rotating Image Gallery </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
-            <li><a href="33-Random Color Generator/index.html"> Random Color Generator </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
-            <li><a href="34-Real Time Character Count/index.html"> Real Time Character Count </a> <span
-                    id="new-item"><img src="./assets/images/image-removebg-preview.png" alt=""></span></li>
-            <li><a href="35- Profile Status/index.html"> Profile Status </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+        <li><a href="16 -Image Search App/index.html">Image Search App </a></li>
+        <li><a href="17-Basic Calculator/index.html">Basic Calculator </a></li>
+        <li>
+          <a href="18-Dad Joke Generator/index.html">Dad joke Generator </a>
+        </li>
+        <li><a href="19 Photo Gallery/index.html">Basic Photo Gallery </a></li>
+        <li>
+          <a href="20-English Dictionary/index.html">English Dictionary</a>
+        </li>
+        <li>
+          <a href="21-Anime Pic Generator/index.html">Anime Pic Generator </a>
+        </li>
+        <li><a href="22-Note App/index.html">Note App</a></li>
+        <li><a href="23-BMI Calculator/index.html">BMI Calculator </a></li>
+        <li>
+          <a href="24- Random Quote Generator/index.html"
+            >Random Quote Generator
+          </a>
+        </li>
+        <li><a href="25- Temperature Convertor/">Temperature Convertor </a></li>
+        <li>
+          <a href="26- Currency Convertor/index.html">Currency Convertor </a>
+        </li>
+        <li><a href="27- Loan Calculator/index.html">Loan Calculator </a></li>
+        <li><a href="28-Random Emoji/index.html">Random Emoji </a></li>
+        <li><a href="29-Feedback UI/index.html"> Feedback UI </a></li>
+        <li>
+          <a href="30-Button Ripple Effect/index.html">
+            Button Ripple Effect
+          </a>
+        </li>
+        <li><a href="31-DigitalClock/index.html"> DigitalClock </a></li>
+        <li>
+          <a href="32-Rotating Image Gallery/index.html">
+            Rotating Image Gallery
+          </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
+        <li>
+          <a href="33-Random Color Generator/index.html">
+            Random Color Generator
+          </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
+        <li>
+          <a href="34-Real Time Character Count/index.html">
+            Real Time Character Count
+          </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
+        <li>
+          <a href="35- Profile Status/index.html"> Profile Status </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
 
-            <li><a href="36-Heart Trail animation/index (1).html"> Heart Trail animation </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+        <li>
+          <a href="36-Heart Trail animation/index (1).html">
+            Heart Trail animation
+          </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
 
-            <li><a href="37-Mini Calender/index.html"> Mini Calender </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
-            <li><a href="38-Animated Search bar/index.html">Animated Search Bar </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
-            <li><a href="39- Social Media Selector/index.html">Social Media Selector </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+        <li>
+          <a href="37-Mini Calender/index.html"> Mini Calender </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
+        <li>
+          <a href="38-Animated Search bar/index.html">Animated Search Bar </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
+        <li>
+          <a href="39- Social Media Selector/index.html"
+            >Social Media Selector
+          </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
 
-            <li><a href="40- Password Generator/index.html">Password Generator </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+        <li>
+          <a href="40- Password Generator/index.html">Password Generator </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
 
-            <li><a href="41- Testimonial Silder/index.html">Testimonial Silder</a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+        <li>
+          <a href="41- Testimonial Silder/index.html">Testimonial Silder</a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
 
-            <li><a href="42- New Year CountDown/index.html">New Year CountDown </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+        <li>
+          <a href="42- New Year CountDown/index.html">New Year CountDown </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
 
-            <li><a href="43- Emoji Rating/index.html">Emoji Rating </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
+        <li>
+          <a href="43- Emoji Rating/index.html">Emoji Rating </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
 
-            <li><a href="44-Sticky Navbar/index.html">Sticky Navbar </a> <span id="new-item"><img
-                        src="./assets/images/image-removebg-preview.png" alt=""></span></li>
-
-
-
-        </ol>
-
+        <li>
+          <a href="44-Sticky Navbar/index.html">Sticky Navbar </a>
+          <span id="new-item"
+            ><img src="./assets/images/image-removebg-preview.png" alt=""
+          /></span>
+        </li>
+      </ol>
     </div>
-
-</body>
-
+  </body>
 </html>
